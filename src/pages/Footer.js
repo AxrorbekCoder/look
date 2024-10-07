@@ -10,13 +10,13 @@ const Footer =() => {
             <h3>A.SH CODERS <span>IT GROUP</span></h3>
 
             <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
+                <a href="javascript:void(0);" class="link-1">Home</a>
                 
-                <a href="#">Blog</a>
+                <a href="javascript:void(0);">Blog</a>
             
-                <a href="#">Pricing</a>
+                <a href="javascript:void(0);">Pricing</a>
             
-                <a href="#">About</a>
+                <a href="javascript:void(0);">About</a>
                 
                 <a href="#">Faq</a>
                 
