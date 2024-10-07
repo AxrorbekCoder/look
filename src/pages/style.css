@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: #222326;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #222326;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 55px;
+    z-index: 999;
+}
+
+.navbar  ul {
+    display: flex;
+    list-style-type: none;
+}
+.navbar  ul li {
+    margin: 0 10px;
+}
+.navbar  ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo-nav {
+    display: flex;
+}
+.logo-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 70px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 10px 10px;
+    }
+    .navbar .logo {
+        width: 50px;
+    }
+    .navbar ul {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100%;
+      width: 250px;
+      padding-top: 10vh;
+      background-color: #333;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: right 0.3s ease-in-out;
+      z-index: 10000;
+    }
+  
+    .navbar ul li {
+      margin: 1rem 0;
+      padding: 0 10px;
+    }
+  
+    .navbar.active ul {
+      right: 0; /* Show the menu by sliding it in from the right */
+
+    }
+  
+    /* Logo and Hamburger Menu */
+    .logo-nav {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.8rem; /* Adjust size as needed */
+        color: #fff; /* Icon color */
+        cursor: pointer;
+        z-index: 10001; /* Ensure it’s above the menu */
+      }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar ul {
+      flex-direction: row;
+      z-index: 10000;
+    }
+  
+    .navbar ul li {
+      margin-left: 0.75rem;
+    }
+  }
