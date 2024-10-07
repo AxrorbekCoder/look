@@ -54,8 +54,8 @@ const Footer =() => {
 
             <div class="footer-icons">
 
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
+                <a href="https://t.me/ash_coders"><FaFacebookF /></a>
+                <a href="https://t.me/ash_coders"><FaInstagram /></a>
                 <a href="https://t.me/ash_coders"><FaTelegramPlane /></a>
                 <a href="https://github.com/AxrorbekCoder"><FaGithub /></a>
 
