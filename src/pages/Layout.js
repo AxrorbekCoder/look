@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Import icons from react-icons
+import { FaTimes } from "react-icons/fa"; // Import icons from react-icons
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import './style.css';
 import logo from './imges/logo.png';
