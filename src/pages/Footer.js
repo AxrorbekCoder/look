@@ -10,17 +10,17 @@ const Footer =() => {
             <h3>A.SH CODERS <span>IT GROUP</span></h3>
 
             <p class="footer-links">
-                <a href="javascript:void(0);" class="link-1">Home</a>
+                <a href="/" class="link-1">Home</a>
                 
-                <a href="javascript:void(0);">Blog</a>
+                <a href="/blog">Blog</a>
             
-                <a href="javascript:void(0);">Pricing</a>
+                <a href="/pricing">Pricing</a>
             
-                <a href="javascript:void(0);">About</a>
+                <a href="/about">About</a>
                 
-                <a href="#">Faq</a>
+                <a href="/faq">Faq</a>
                 
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </p>
 
             <p class="footer-company-name">© 2015 All rights reserved.</p>
