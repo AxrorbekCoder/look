@@ -1,13 +1,15 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa"; // Import icons from react-icons
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { TransitionGroup, CSSTransition } from "react-transition-group"; // Import transition components
 import './style.css';
 import logo from './imges/logo.png';
 import Footer from './Footer';
 
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get the current location
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -45,7 +47,16 @@ const Layout = () => {
         </ul>
       </nav>
 
-      <Outlet />
+      <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          classNames="fade" // Class name for the fade animation
+          timeout={300} // Duration of the animation
+        >
+          <Outlet />
+        </CSSTransition>
+      </TransitionGroup>
+      
       <Footer />
     </>
   );
